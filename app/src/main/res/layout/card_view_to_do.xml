@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/notepad_margin"
+    android:padding="@dimen/todo_padding"
+    android:orientation="vertical"
+    android:id="@+id/rootViewItem"
+    android:background="@drawable/itemborder">
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/text_header"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="start"-->
+        <!--android:padding="16dp"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:textColor="@color/colorPrimaryDark"-->
+        <!--android:textStyle="bold"-->
+        <!--tools:text="A" />-->
+
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        card_view:cardCornerRadius="2dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="2"
+                        android:id="@+id/tvToDoText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/content_size_todo"
+                        android:maxLines="1"
+                        android:textColor="#000000"/>
+
+                    <ImageButton
+                        android:id="@+id/imbAlarm"
+                        android:layout_width="@dimen/icon_size_todo"
+                        android:layout_height="@dimen/icon_size_todo"
+                        android:background="@drawable/alarm_on"
+                        android:layout_marginRight="10dp"/>
+
+                    <ImageButton
+                        android:id="@+id/imbShare"
+                        android:layout_width="@dimen/icon_size_todo"
+                        android:layout_height="@dimen/icon_size_todo"
+                        android:background="@drawable/share"
+                        android:layout_marginRight="10dp"/>
+
+                    <ImageButton
+                        android:id="@+id/imbDelete"
+                        android:layout_width="@dimen/icon_size_todo"
+                        android:layout_height="@dimen/icon_size_todo"
+                        android:background="@drawable/delete"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:padding="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#dfdfdf"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:gravity="center"
+                            android:id="@+id/tvToDoDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/date_size_todo"/>
+
+                        <TextView
+                            android:gravity="center"
+                            android:id="@+id/tvToDoTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/date_size_todo"
+                            android:textColor="#000000"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_weight="3">
+
+                        <TextView
+                            android:gravity="center"
+                            android:id="@+id/tvToDoCategory"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/date_size_todo"
+                            android:textColor="#000000"/>
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:actionModeBackground">@color/colorActionMode</item>   <!-- to set action bar color when in action mode-->
+        <item name="android:textColorSecondary">#ffffff</item>  <!-- to make option menu icon(3 dots)white in recycler item-->
+
+        <item name="actionBarStyle">@style/Theme.AppLib.ActionBar.Solid</item>
+
+    </style>
+
+
+
+    <style name="Theme.AppLib.ActionBar.Solid" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="titleTextStyle">@style/Theme.AppLib.ActionBar.TitleTextStyle</item>
+    </style>
+    <style name="Theme.AppLib.ActionBar.TitleTextStyle" parent="">
+        <item name="android:textSize">@dimen/toolbar_text_size</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+
+
+    <style name="myButtonTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColorPrimary">#ffffff</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+    </style>
+
+
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">@dimen/tabs_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="spinner_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/gradient_spinner</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:popupBackground">#DFFFFFFF</item>.
+    </style>
+
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+</resources>

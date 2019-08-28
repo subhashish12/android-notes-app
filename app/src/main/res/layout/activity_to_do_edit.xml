@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/todo_color_bg"
+    android:orientation="vertical"
+    tools:context=".ToDoEditActivity">
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewbanner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:visibility="gone"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner1_id" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_topToDo"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editText_todo_H"
+                android:layout_marginLeft="@dimen/margin_Linear_ToDo"
+                android:layout_marginRight="@dimen/margin_Linear_ToDo"
+                android:layout_marginTop="@dimen/margin_Linear_ToDo"
+                android:gravity="center"
+                android:background="@drawable/textinputborder"
+                android:padding="5dp">
+
+                <EditText
+                    android:id="@+id/etTaskToDo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Task Here..."
+                    android:textSize="@dimen/todo_edit_text_size"
+                    android:background="@null"/>
+
+
+            </ScrollView>
+
+
+            <LinearLayout
+                android:id="@+id/linearDateToDo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_Linear_ToDo"
+                android:layout_marginTop="@dimen/margin_Linear_ToDo"
+                android:gravity="center"
+                android:padding="@dimen/margin_Linear_ToDo">
+
+                <EditText
+                    android:id="@+id/etDateToDo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_Linear_ToDo"
+                    android:layout_marginRight="@dimen/margin_Linear_ToDo"
+                    android:textSize="@dimen/todo_edit_text_size"
+                    android:layout_weight="2"
+                    android:focusable="false"
+                    android:hint="Date not set" />
+
+
+                <ImageButton
+                    android:id="@+id/ic_calendar"
+                    android:layout_width="@dimen/icon_size_todo_edit"
+                    android:layout_height="@dimen/icon_size_todo_edit"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/calander" />
+
+                <ImageButton
+                    android:visibility="invisible"
+                    android:id="@+id/removeDate"
+                    android:layout_width="@dimen/icon_size_todo_edit"
+                    android:layout_height="@dimen/icon_size_todo_edit"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/close" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearTimeToDo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_Linear_ToDo"
+                android:layout_marginTop="@dimen/margin_Linear_ToDo"
+                android:gravity="center"
+                android:padding="@dimen/margin_Linear_ToDo">
+
+                <EditText
+                    android:id="@+id/etTimeToDo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_Linear_ToDo"
+                    android:layout_marginRight="@dimen/margin_Linear_ToDo"
+                    android:textSize="@dimen/todo_edit_text_size"
+                    android:layout_weight="2"
+                    android:focusable="false"
+                    android:hint="Time not set" />
+
+
+                <ImageButton
+                    android:id="@+id/ic_clock"
+                    android:layout_width="@dimen/icon_size_todo_edit"
+                    android:layout_height="@dimen/icon_size_todo_edit"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/clock" />
+
+                <ImageButton
+                    android:visibility="invisible"
+                    android:id="@+id/removeTime"
+                    android:layout_width="@dimen/icon_size_todo_edit"
+                    android:layout_height="@dimen/icon_size_todo_edit"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/close" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_Linear_ToDo"
+                android:gravity="center"
+                android:padding="15dp">
+
+
+                <Spinner
+                    android:id="@+id/spinToDo"
+                    style="@style/spinner_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:paddingLeft="8dp"
+                    android:popupBackground="@android:color/white"
+                    android:scrollbars="none"
+                    android:spinnerMode="dropdown" />
+
+
+                <TextView
+                    android:visibility="invisible"
+                    android:id="@+id/tvCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="General"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/todo_edit_text_size" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_Linear_ToDo"
+                android:padding="@dimen/margin_Linear_ToDo">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvReminder"
+                    android:textSize="@dimen/todo_edit_text_size"
+                    android:textColor="#000000"
+                    android:text="Set Reminder" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/switchReminder"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_Linear_ToDo"
+                android:gravity="center">
+
+                <Button
+                    android:layout_margin="5dp"
+                    android:id="@+id/cancelToDo"
+                    android:layout_width="@dimen/button_size_todo_W"
+                    android:layout_height="@dimen/button_size_todo_H"
+                    android:text="Cancel"
+                    android:textSize="19sp"
+                    android:theme="@style/myButtonTheme" />
+
+                <Button
+                    android:layout_margin="5dp"
+                    android:id="@+id/saveToDo"
+                    android:layout_width="@dimen/button_size_todo_W"
+                    android:layout_height="@dimen/button_size_todo_H"
+                    android:text="Save"
+                    android:textSize="19sp"
+                    android:theme="@style/myButtonTheme" />
+
+
+            </LinearLayout>
+
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adViewbanner2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:visibility="gone"
+                ads:adSize="SMART_BANNER"
+                ads:adUnitId="@string/banner2_id" />
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

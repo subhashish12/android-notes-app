@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#11b4c9</color>
+    <color name="colorPrimaryDark">#0a8696</color>
+    <color name="colorAccent">#11b4c9</color>
+
+    <color name="colorPrimary2">#43a047</color>
+    <color name="colorPrimaryDark2">#1b5e20</color>
+
+    <color name="colorPrimary3">#0288d1</color>
+    <color name="colorPrimaryDark3">#01579b</color>
+
+
+    <color name="colorActionMode">#00d1d1d1</color>
+    <color name="colorTabIndicator">#fff020</color>
+
+
+    <color name="colorCheckRegular">#fafafa</color>
+    <color name="colorChckOnClick">#00e6c3</color>
+
+
+
+    <color name="colorDialogBG">#fcffff</color>
+
+
+    <color name="note1">#9f18e4f7</color>
+    <color name="note2">#73ffff00</color>
+    <color name="note3">#9142ff78</color>
+    <color name="note4">#a5dd43ff</color>
+    <color name="note5">#b6fc358b</color>
+    <color name="note6">#c8438eff</color>
+    <color name="note7">#b5f7872b</color>
+    <color name="note8">#af8a42ff</color>
+    <color name="note9">#a7ff3d40</color>
+    <color name="note10">#b57c4732</color>
+    <color name="note11">#bfd1d1d1</color>
+    <color name="note12">#c1e7be5f</color>
+    <color name="note13">#c6808df9</color>
+    <color name="note14">#b100bef2</color>
+    <color name="note15">#bea0cecf</color>
+
+
+
+    <color name="notepadDefault">#70f9f9f9</color>
+    <color name="notepad1">#7018e4f7</color>
+    <color name="notepad2">#67ffff00</color>
+    <color name="notepad3">#6242ff78</color>
+    <color name="notepad4">#6ddd43ff</color>
+    <color name="notepad5">#8ffc358b</color>
+    <color name="notepad6">#77438eff</color>
+    <color name="notepad7">#91f7872b</color>
+    <color name="notepad8">#7f8a42ff</color>
+    <color name="notepad9">#95ff3d40</color>
+    <color name="notepad10">#677c4732</color>
+    <color name="notepad11">#92d1d1d1</color>
+    <color name="notepad12">#99e7be5f</color>
+    <color name="notepad13">#9a808df9</color>
+    <color name="notepad14">#6c00bef2</color>
+    <color name="notepad15">#99a0cecf</color>
+
+
+
+
+    <color name="selected_item_color">#f10004</color>
+    <color name="not_selected_item_color">#00000000</color>
+    <color name="splash_color_bg">#11b4c9</color>
+    <color name="todo_color_bg">#92d1d1d1</color>
+    <color name="button_bg_sticky">#cc0c9c</color>
+
+    <color name="btn_main">#f4a717</color>
+    <color name="btn_ripple">#d69b02</color>
+
+    <color name="white">#ffffff</color>
+    <color name="currentTaskColor">#58f100</color>
+</resources>

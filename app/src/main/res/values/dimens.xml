@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="about_head_size">40dp</dimen>
+    <dimen name="about_text_size">15sp</dimen>
+    <dimen name="about_icon_size">100dp</dimen>
+    <dimen name="about_app_name_txt">16sp</dimen>
+
+
+    <dimen name="splash_text_size">23sp</dimen>
+    <dimen name="splash_img_width">200dp</dimen>
+    <dimen name="start_btn_W">100dp</dimen>
+    <dimen name="start_btn_H">50dp</dimen>
+    <dimen name="spash_privacy_text_size">15sp</dimen>
+    <dimen name="spl_text_margin">5dp</dimen>
+
+
+
+
+    <dimen name="main_button_HW">45dp</dimen>
+    <dimen name="tools_HW">60dp</dimen>
+    <dimen name="main_sticker_HW">65dp</dimen>
+    <dimen name="main_button_padding">5dp</dimen>
+    <dimen name="main_card_margin_LR">8dp</dimen>
+    <dimen name="main_card_margin_TB">5dp</dimen>
+
+
+    <dimen name="all_note_margin">5dp</dimen>
+    <dimen name="all_note_height">180dp</dimen>
+    <dimen name="all_txtsize_title">15sp</dimen>
+    <dimen name="all_sticker_size">60dp</dimen>
+    <dimen name="all_margin_content">5dp</dimen>
+    <dimen name="all_txtsize_content">12sp</dimen>
+
+    <dimen name="content_size_todo">15sp</dimen>
+    <dimen name="icon_size_todo">35dp</dimen>
+    <dimen name="date_size_todo">13sp</dimen>
+    <dimen name="option_menu_icon_HW">35dp</dimen>
+
+
+    <dimen name="margin_topToDo">5dp</dimen>
+    <dimen name="margin_Linear_ToDo">10dp</dimen>
+    <dimen name="icon_size_todo_edit">40dp</dimen>
+    <dimen name="button_size_todo_W">130dp</dimen>
+    <dimen name="button_size_todo_H">60dp</dimen>
+    <dimen name="editText_todo_H">180dp</dimen>
+
+    <dimen name="sticky_icon_text_size">15sp</dimen>
+    <dimen name="text_size_title_sticky">25sp</dimen>
+    <dimen name="notepad_margin">3dp</dimen>
+    <dimen name="item_border_width">3dp</dimen>
+    <dimen name="tabs_text_size">16sp</dimen>
+    <dimen name="toolbar_text_size">18sp</dimen>
+    <dimen name="todo_padding">3dp</dimen>
+    <dimen name="todo_edit_text_size">17sp</dimen>
+
+
+    <dimen name="fileE_List_WH">40dp</dimen>
+    <dimen name="fileE_List_Padding">5dp</dimen>
+    <dimen name="fileE_List_TextSzie">14sp</dimen>
+    <dimen name="fileE_Btn_WH">50dp</dimen>
+
+
+    <dimen name="button_img_margin">10dp</dimen>
+    <dimen name="custom_btn_text_size">18sp</dimen>
+    <dimen name="button_icon_size">100dp</dimen>
+    <dimen name="button_text_size">18sp</dimen>
+
+
+</resources>

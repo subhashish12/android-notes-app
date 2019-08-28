@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewbanner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:visibility="gone"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner1_id" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fileDoneImage"
+            android:background="@drawable/bk_done"
+            android:layout_centerInParent="true"/>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:layout_margin="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewProgress"
+            android:text="Creating Backup..."
+            android:textColor="#585858"
+            android:textSize="@dimen/fileE_List_TextSzie"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_margin="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewBackupInfo"
+            android:text="info"
+            android:textSize="@dimen/fileE_List_TextSzie"
+            android:textColor="#585858"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#e6e6e6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center">
+
+
+        <Button
+            android:layout_margin="5dp"
+            android:theme="@style/myButtonTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:id="@+id/shareBackup"
+            android:textSize="@dimen/button_text_size"
+            android:text="Share Backup"/>
+
+
+
+        <Button
+            android:layout_margin="5dp"
+            android:theme="@style/myButtonTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:id="@+id/browseBackup"
+            android:textSize="@dimen/button_text_size"
+            android:text="Browse Backups"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

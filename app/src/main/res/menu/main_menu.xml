@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/gift"
+        android:orderInCategory="200"
+        android:title="DRPU Promo"
+        app:showAsAction="always"
+        android:icon="@drawable/promo"/>
+
+
+    <item
+        android:id="@+id/stop_ad"
+        android:orderInCategory="200"
+        android:title="Stop Ad"
+        app:showAsAction="always"
+        android:icon="@drawable/stop_ad"/>
+
+    <item
+        android:id="@+id/about_us"
+        android:orderInCategory="200"
+        android:title="About Us"/>
+
+    <item
+        android:id="@+id/share"
+        android:orderInCategory="200"
+        android:title="Share App"/>
+
+
+    <item
+    android:id="@+id/rate_us"
+    android:orderInCategory="200"
+    android:title="Rate Us"/>
+
+    <item
+        android:id="@+id/tech_support"
+        android:orderInCategory="200"
+        android:title="Tech Support"/>
+
+    <item
+        android:id="@+id/privacy_policy"
+        android:orderInCategory="200"
+        android:title="Privacy Policy"/>
+
+
+    <item
+        android:id="@+id/backup"
+        android:orderInCategory="200"
+        android:title="Backup/Restore"/>
+
+</menu>

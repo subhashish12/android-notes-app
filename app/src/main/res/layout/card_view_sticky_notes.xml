@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/all_note_margin"
+    android:padding="@dimen/todo_padding"
+    android:orientation="vertical"
+    android:id="@+id/linearRoot">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="0dp">
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/all_note_height"
+            android:background="#04becf"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/relativeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textViewTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="2"
+                    android:fontFamily="serif"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:text="title"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/all_txtsize_title" />
+
+                <ImageView
+                    android:id="@+id/imageViewC"
+                    android:layout_width="@dimen/all_sticker_size"
+                    android:layout_height="@dimen/all_sticker_size" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textViewC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeTitle"
+                android:layout_margin="@dimen/all_margin_content"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:lines="3"
+                android:maxLines="1"
+                android:textColor="#000000"
+                android:textSize="@dimen/all_txtsize_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/note_item_gradient"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="date"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/all_txtsize_content" />
+
+                <ImageButton
+                    android:id="@+id/ibOptionMenuStickyNotes"
+                    android:layout_width="@dimen/option_menu_icon_HW"
+                    android:layout_height="@dimen/option_menu_icon_HW"
+                    android:background="@drawable/option_icon"
+                    android:foreground="?selectableItemBackgroundBorderless"/>
+                <!--style="?android:attr/actionOverflowButtonStyle"-->
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

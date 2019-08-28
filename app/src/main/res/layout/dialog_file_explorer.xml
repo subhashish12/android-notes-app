@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#20a7d9">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:textSize="@dimen/fileE_List_TextSzie"
+        android:textColor="#ffffff"
+        android:text="Select Backup File"/>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="@dimen/fileE_Btn_WH"
+            android:layout_height="@dimen/fileE_Btn_WH"
+            android:background="@drawable/home_ic" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+
+        <Button
+            android:id="@+id/up"
+            android:layout_width="@dimen/fileE_Btn_WH"
+            android:layout_height="@dimen/fileE_Btn_WH"
+            android:background="@drawable/up_ic" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/done"
+            android:layout_width="@dimen/fileE_Btn_WH"
+            android:layout_height="@dimen/fileE_Btn_WH"
+            android:background="@drawable/ok_ic" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="@dimen/fileE_Btn_WH"
+            android:layout_height="@dimen/fileE_Btn_WH"
+            android:background="@drawable/close_ic" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <TextView
+            android:id="@+id/folder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:inputType="textNoSuggestions"
+            android:overScrollMode="ifContentScrolls"
+            android:padding="5dp"
+            android:scrollHorizontally="true"
+            android:scrollbars="none"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/fileE_List_TextSzie" />
+
+    </HorizontalScrollView>
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/folder"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:textSize="@dimen/fileE_path_txt_size"-->
+        <!--android:padding="5dp"-->
+        <!--android:layout_margin="10dp"/>-->
+
+
+    <ListView
+        android:background="#ffffff"
+        android:scrollbars="none"
+        android:id="@+id/dialoglist"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

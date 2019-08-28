@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/about_head_size"
+        android:text="About Us"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/about_text_size"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="2dp"/>
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewbanner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:visibility="gone"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner1_id" />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fefefe"
+            android:textSize="5sp"
+            android:textStyle="bold"
+            android:background="#154b46"
+            />
+
+        <TextView android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="Cool Sticky Notes Rich Look Reminder Chits(v1.6)"
+            android:textColor="#000000"
+            android:textSize="@dimen/about_app_name_txt"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/about_icon_size"
+            android:layout_height="@dimen/about_icon_size"
+            android:src="@drawable/logo"
+            android:gravity="center"/>
+
+
+
+        <TextView android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="\u00A9 Copyright 2019 DRPU Software Pvt Ltd."
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact us:"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+        <TextView android:id="@+id/mail"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:text="support@ProDataDoctor.com"
+            android:textColor="#0d1cf8"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+
+        <TextView android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:text="Website:"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView android:id="@+id/website"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:text="@string/link"
+            android:textColor="#0d1cf8"
+            android:textSize="20sp"
+            android:textStyle="bold|bold|italic" />
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/youTube"
+            android:background="@drawable/you_tube_button"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fefefe"
+            android:textSize="5sp"
+            android:textStyle="bold"
+            android:id="@+id/textViewOk"
+            android:background="#154b46"
+            android:layout_marginBottom="2dp"/>
+
+
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adViewbanner2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:visibility="gone"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/banner2_id" />
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:id="@+id/techSupport"
+            android:text="Tech Support"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adViewbanner3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            ads:adSize="SMART_BANNER"
+            android:visibility="gone"
+            ads:adUnitId="@string/banner3_id" />
+    </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:id="@+id/linearRoot"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp">
+
+    <ImageView
+        android:layout_width="@dimen/fileE_List_WH"
+        android:layout_height="@dimen/fileE_List_WH"
+        android:padding="@dimen/fileE_List_Padding"
+        android:id="@+id/imgFol"/>
+
+    <TextView
+        android:layout_weight="2"
+        android:id="@+id/nameFol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/fileE_List_TextSzie"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:textColor="#0d0d0d" />
+
+
+    <ImageButton
+        android:layout_width="@dimen/fileE_List_WH"
+        android:layout_height="@dimen/fileE_List_WH"
+        android:id="@+id/restoreBackup"
+        android:src="@drawable/bk_restore"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+
+    <ImageButton
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+
+        android:layout_width="@dimen/fileE_List_WH"
+        android:layout_height="@dimen/fileE_List_WH"
+        android:src="@drawable/bk_share"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:id="@+id/sharebackup"/>
+
+
+    <ImageButton
+        android:layout_width="@dimen/fileE_List_WH"
+        android:layout_height="@dimen/fileE_List_WH"
+        android:src="@drawable/bk_delete"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:id="@+id/deletebackup"/>
+
+</LinearLayout>

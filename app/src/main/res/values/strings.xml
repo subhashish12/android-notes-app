@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Cool Sticky Notes Rich Look Reminder Chits</string>
+
+
+    <string-array name="todo_category_array">
+        <item>Select Category</item>
+        <item>General</item>
+        <item>Personal</item>
+        <item>Shopping</item>
+        <item>Wishlist</item>
+        <item>Work</item>
+    </string-array>
+
+
+    <string name="applink">https://play.google.com/store/apps/details?id=com.prodatadoctor.CoolStickyNotes</string>
+
+
+    <string name="technician">This section is Troubleshooting purposes only.\nEnter Code that you received from our support team</string>
+
+    <string name="link"><b><u><i> </i>www.ProDataDoctor.com</u></b></string>
+    <string name="privacypolicy"><![CDATA[<small>If you do not agree to our <font color=#215187><a href="http://www.prodatadoctor.com/prodata/privacy-policy.html">Privacy Policy</a></small><small>, Tap]]></string>
+
+    <string name="banner1_id">ca-app-pub-7288190185771006/3203989631</string>
+    <string name="banner2_id">ca-app-pub-7288190185771006/6848046477</string>
+    <string name="banner3_id">ca-app-pub-7288190185771006/2001670633</string>
+    <string name="interstitial_full_screen">ca-app-pub-7288190185771006/2629274569</string>
+
+    <string name="appid">ca-app-pub-7288190185771006~7219912809</string>
+
+
+    <!--<string name="banner1_id">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--<string name="banner2_id">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--<string name="banner3_id">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--<string name="interstitial_full_screen">ca-app-pub-3940256099942544/8691691433</string>-->
+
+
+    <string name="base64EncodedPublicKey">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjJimutoWLp3hhkm4WK2eeTQydZUj3tr0ixkmu6UjhEEk/PkrcMZzTIp37XeZiRtfymuRIin0qbCYa7+vrZZ/FKjsrkJWnTq81QVoTyA6+5vj2K31SyzSGo5pZCxJEQVHNMyk4N1ndJhiZzT9/NMmKg10UWaY0qMCQ2UPkLZtwAIGaEa73B6exL8UzKva+qoevyEzcCqOfm9g4mj+WYcjkFHrFlTKP/LJbrFnHYdl2/qSLIn9Rf9OLiXvkkUkS+K4SKFF2Us3Y0W8Bwk/VUjOpzXmyklD69Ec7N+jCG6H7mjtm56KyGd4UaIY5MufSZ1wzt9gIwjyuNYO7AC5FxsAUQIDAQAB</string>
+
+
+    <string name="fivestar">Awesome, 5 Stars</string>
+    <string name="reason">"Not Great!"</string>
+    <string name="later">Ask me Later</string>
+
+</resources>
